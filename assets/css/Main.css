@@ -54,6 +54,7 @@ body, html {
     padding: 18px;
     font-size: 22px;
     letter-spacing: 5px;
+    white-space: nowrap;
 }
 
 .borderLang {
