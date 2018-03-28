@@ -7,6 +7,7 @@ body, html {
     height: 100%;
 }
 
+
 .coverImg {
     background: grey url("../img/background.jpg") no-repeat center;
     background-size: cover;
@@ -54,7 +55,6 @@ body, html {
     padding: 18px;
     font-size: 22px;
     letter-spacing: 5px;
-    white-space: nowrap;
 }
 
 .borderLang {
@@ -74,3 +74,4 @@ body, html {
     text-transform: capitalize;
     color: #7EEBE3;
 }
+
