@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.coverImg {
+    background: grey url("../img/background.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.nav {
+    position: relative;
+    left: 0;
+    right: 0;
+    /*top: 10px;*/
+    /*background-color: #ffffff;*/
+    height: 50px;
+    padding: auto;
+}
+
+.logo {
+    color: crimson;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.PersonalImg {
+    width: 190px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 150px;
+}
+
+.headline {
+    text-transform: uppercase;
+    color: #FF0000;
+}
+
+.border {
+    background-color: #111111;
+    padding: 18px;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.borderLang {
+    background-color: #111111;
+    padding: 18px;
+    font-size: 22px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.flexLanguages {
+    margin-top: 25px;
+}
+
+.subHeadline {
+    text-transform: capitalize;
+    color: #7EEBE3;
+}
