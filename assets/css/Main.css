@@ -1,77 +1,90 @@
-* {
-    margin: 0;
+html, body {
+    margin: auto 0;
     padding: 0;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-body, html {
-    height: 100%;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(214, 15%, 91%);
+}
+
+a {
+    text-decoration: none;
 }
 
 
-.coverImg {
-    background: grey url("../img/background.jpg") no-repeat center;
-    background-size: cover;
-    position: relative;
-    height: 100%;
+/* ---------- START Media Query -----------*/
+/* Large screen */
+@media (max-width: 1024px) and (min-width: 768px) { 
+    #project-tile {
+        width: 200px;
+    }
+    
+    #project-tile > a > img {
+        width: 200px;
+    }
 }
 
-.nav {
-    position: relative;
-    left: 0;
-    right: 0;
-    /*top: 10px;*/
-    /*background-color: #ffffff;*/
-    height: 50px;
-    padding: auto;
+/* Medium Screen */
+@media (max-width: 768px) and (min-width: 640px) {
+    #project-tile {
+        width: 150px;
+    }
+    
+    #project-tile > a > img {
+        width: 150px;
+    }
 }
 
-.logo {
-    color: crimson;
+/* Small Screen */
+@media (max-width: 640px) {
+    #projects {
+        flex-wrap: wrap;
+    }
 }
+/* ---------- START Media Query -----------*/
 
-.container {
+#projects {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
-.PersonalImg {
-    width: 190px;
-    height: 200px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    margin-top: 150px;
+#project-tile {
+    background-color: hsl(216, 33%, 97%);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 3px 3px hsl(210, 16%, 82%);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
-.headline {
-    text-transform: uppercase;
-    color: #FF0000;
+#project-tile:hover {
+    box-shadow: 0px 0px 10px 10px hsl(210, 16%, 82%);
 }
 
-.border {
-    background-color: #111111;
-    padding: 18px;
-    font-size: 22px;
-    letter-spacing: 5px;
+#project-tile > a > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.7rem + 1vw);
+    font-weight: 400;
+    color: hsl(210, 24%, 16%);
 }
 
-.borderLang {
-    background-color: #111111;
-    padding: 18px;
-    font-size: 22px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
+#project-tile > a > p > span {
+    font-size: calc(1rem + 1vw);
+    font-weight: 700;
+    padding: 0px 10px;
+    color: hsl(210, 16%, 82%);
 }
 
-.flexLanguages {
-    margin-top: 25px;
-}
-
-.subHeadline {
-    text-transform: capitalize;
-    color: #7EEBE3;
+#project-tile:hover .code {
+    color: hsl(200, 54%, 49%);
 }
 
