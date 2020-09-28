@@ -1,3 +1,7 @@
+:root {
+    --primary-font-color: hsl(210, 24%, 16%);
+}
+
 html, body {
     margin: auto 0;
     padding: 0;
@@ -47,13 +51,28 @@ a {
         flex-wrap: wrap;
     }
 }
-/* ---------- START Media Query -----------*/
+/* ---------- END Media Query -----------*/
 
-#projects {
+
+/* ---------- START Project Section ---------- */
+#projects-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section > h1 {
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: hsl(200, 68%, 35%);
 }
 
 #project-tile {
@@ -75,7 +94,7 @@ a {
     justify-content: center;
     font-size: calc(0.7rem + 1vw);
     font-weight: 400;
-    color: hsl(210, 24%, 16%);
+    color: var(--primary-font-color);
 }
 
 #project-tile > a > p > span {
@@ -89,3 +108,4 @@ a {
     color: hsl(200, 54%, 49%);
 }
 
+/* ---------- END Project Section ---------- */
