@@ -181,6 +181,7 @@ a {
     height: 10vh;
     max-width: 100%;
     background-color: hsl(210, 24%, 16%);
+    border-top: 0.2rem solid hsl(200, 59%, 43%);
 }
 
 #footer > footer > strong {
