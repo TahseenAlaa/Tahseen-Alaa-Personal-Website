@@ -137,25 +137,27 @@ a {
     font-style: italic;
 }
 
-#socail-media {
+#social-media {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#socail-media > p {
+#social-media > a > p {
     display: flex;
     align-items: center;
     padding: 24px;
     transition: padding-top 0.3s ease-in-out;
+    text-decoration: none;
+    color: hsl(201, 100%, 96%);
 }
 
-#socail-media > p:hover {
+#social-media > a > p:hover {
     padding-top: 0;
 }
 
-#socail-media > p {
+#social-media > a > p {
     text-transform: capitalize;
 }
 
