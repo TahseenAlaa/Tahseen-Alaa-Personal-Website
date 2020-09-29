@@ -61,7 +61,7 @@ a {
     align-items: center;
 }
 
-#welcome-section > h1 {
+#project-header > h1 {
     font-size: calc(1.3rem + 1vw);
     font-weight: 500;
     text-decoration: underline;
