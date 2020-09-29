@@ -55,13 +55,13 @@ a {
     flex-wrap: wrap;
 }
 
-#project-header {
+#projects-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#project-header > h1 {
+#projects-header > h1 {
     font-size: calc(1.3rem + 1vw);
     font-weight: 500;
     text-decoration: underline;
