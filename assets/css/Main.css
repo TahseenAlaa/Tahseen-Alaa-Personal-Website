@@ -170,3 +170,22 @@ a {
     padding: 5px;
 }
 /* ---------- END Contact Section ----------*/
+
+
+/* ---------- START Footer Section -----------*/
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    max-width: 100%;
+    background-color: hsl(210, 24%, 16%);
+}
+
+#footer > footer > strong {
+    text-transform: capitalize;
+    color: hsl(216, 33%, 97%);
+    font-size: calc(0.8rem + 0.5vw);
+}
+/* ---------- END Footer Section -----------*/
