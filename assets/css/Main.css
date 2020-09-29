@@ -155,6 +155,10 @@ a {
     padding-top: 0;
 }
 
+#socail-media > p {
+    text-transform: capitalize;
+}
+
 #icon > img {
     width: 20px;
     height: 20px;
