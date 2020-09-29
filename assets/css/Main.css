@@ -3,7 +3,7 @@
 }
 
 html, body {
-    margin: auto 0;
+    margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
@@ -107,6 +107,7 @@ a {
 #contact-section {
     height: 90vh;
     width: 100vw;
+    max-width: 100%;
     background-color: hsl(209, 18%, 30%);
     color: hsl(216, 33%, 97%);
 }
