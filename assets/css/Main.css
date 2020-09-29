@@ -44,13 +44,6 @@ a {
         width: 150px;
     }
 }
-
-/* Small Screen */
-@media (max-width: 640px) {
-    #projects {
-        flex-wrap: wrap;
-    }
-}
 /* ---------- END Media Query -----------*/
 
 
