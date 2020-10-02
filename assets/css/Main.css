@@ -207,7 +207,7 @@ a {
     text-transform: capitalize;
 }
 
-#icon > img {
+.icon > img {
     width: 20px;
     height: 20px;
     padding: 5px;
