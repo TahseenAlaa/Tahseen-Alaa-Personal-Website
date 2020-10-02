@@ -116,13 +116,13 @@ a {
     background-color: hsl(216, 33%, 97%);
     padding: 10px;
     margin: 20px 20px;
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 0px 0px 3px 3px hsl(210, 16%, 82%);
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
     transition: box-shadow 0.5s ease-in-out;
 }
 
 #project-tile:hover {
-    box-shadow: 0px 0px 10px 10px hsl(210, 16%, 82%);
+    box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
 #project-tile > a > p {
@@ -137,7 +137,7 @@ a {
 #project-tile > a > p > span {
     font-size: calc(1rem + 1vw);
     font-weight: 700;
-    padding: 0px 10px;
+    padding: 0 10px;
     color: hsl(210, 16%, 82%);
 }
 
