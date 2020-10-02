@@ -25,22 +25,22 @@ a {
 /* ---------- START Media Query -----------*/
 /* Large screen */
 @media (max-width: 1024px) and (min-width: 768px) { 
-    #project-tile {
+    .project-tile {
         width: 200px;
     }
     
-    #project-tile > a > img {
+    .project-tile > a > img {
         width: 200px;
     }
 }
 
 /* Medium Screen */
 @media (max-width: 768px) and (min-width: 640px) {
-    #project-tile {
+    .project-tile {
         width: 150px;
     }
     
-    #project-tile > a > img {
+    .project-tile > a > img {
         width: 150px;
     }
 }
@@ -112,7 +112,7 @@ a {
     color: hsl(200, 68%, 35%);
 }
 
-#project-tile {
+.project-tile {
     background-color: hsl(216, 33%, 97%);
     padding: 10px;
     margin: 20px 20px;
@@ -121,11 +121,11 @@ a {
     transition: box-shadow 0.5s ease-in-out;
 }
 
-#project-tile:hover {
+.project-tile:hover {
     box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
-#project-tile > a > p {
+.project-tile > a > p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,14 +134,14 @@ a {
     color: var(--primary-font-color);
 }
 
-#project-tile > a > p > span {
+.project-tile > a > p > span {
     font-size: calc(1rem + 1vw);
     font-weight: 700;
     padding: 0 10px;
     color: hsl(210, 16%, 82%);
 }
 
-#project-tile:hover .code {
+.project-tile:hover .code {
     color: hsl(200, 54%, 49%);
 }
 
