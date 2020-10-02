@@ -54,6 +54,8 @@ a {
     max-width: 100%;
     top: 0;
     background-color: hsl(210, 24%, 16%);
+    position: sticky;
+    box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
 #logo-wrapper:hover {
