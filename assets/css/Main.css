@@ -47,12 +47,64 @@ a {
 /* ---------- END Media Query -----------*/
 
 
+/* ---------- START Navbar Section -----------*/
+#navbar {
+    width: 100vw;
+    height: 10vh;
+    max-width: 100%;
+    top: 0;
+    background-color: hsl(210, 24%, 16%);
+}
+
+#logo-wrapper:hover {
+    cursor: pointer;
+}
+
+#navbar > header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-links {
+    list-style: none;
+}
+
+#nav-links > li {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: calc(1rem + 0.3vw);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#nav-links > li:nth-child(2) {
+    background-color: hsl(122, 47%, 35%);
+    margin-left: 20px;
+}
+
+#nav-links > li:nth-child(2):hover {
+    background-color: hsl(125, 73%, 20%);
+}
+
+#nav-links > li > a {
+    color: hsl(125, 65%, 93%);
+    transition: color 0.3s ease-in-out;
+}
+
+#nav-links > li > a[href="#contact-section"]:hover {
+    color: hsl(216, 33%, 97%);
+}
+/* ---------- END Navbar Section -----------*/
+
+
 /* ---------- START Welcome Section ----------- */
 #welcome-section {
     position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     max-width: 100%;
     background: center / cover no-repeat url("https://cdn.pixabay.com/photo/2015/01/09/11/11/startup-594126_960_720.jpg");
