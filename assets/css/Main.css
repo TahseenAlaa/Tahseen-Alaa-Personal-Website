@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root {
     --primary-font-color: hsl(210, 24%, 16%);
 }
@@ -54,7 +61,9 @@ a {
     max-width: 100%;
     top: 0;
     background-color: hsl(210, 24%, 16%);
+    position: -webkit-sticky;
     position: sticky;
+    -webkit-box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
     box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
@@ -63,8 +72,13 @@ a {
 }
 
 #navbar > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -78,6 +92,8 @@ a {
     border-radius: 2px;
     text-transform: capitalize;
     font-size: calc(1rem + 0.3vw);
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -92,6 +108,8 @@ a {
 
 #nav-links > li > a {
     color: hsl(125, 65%, 93%);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -117,8 +135,14 @@ a {
 #hero-text {
     z-index: 1;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
 }
@@ -146,9 +170,15 @@ a {
 
 /* ---------- START Project Section ---------- */
 #projects-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100vw;
     max-width: 100%;
@@ -156,8 +186,14 @@ a {
 }
 
 #projects-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -173,17 +209,29 @@ a {
     padding: 10px;
     margin: 20px 20px;
     border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
     box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
+    -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: -webkit-box-shadow 0.5s ease-in-out;
+    -o-transition: box-shadow 0.5s ease-in-out;
     transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
 .project-tile:hover {
+    -webkit-box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
     box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
 .project-tile > a > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-size: calc(1.2rem + 0.2vw);
     font-weight: 400;
@@ -216,9 +264,18 @@ a {
 }
 
 #contact-section > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 150px;
     padding-bottom: 10px;
@@ -241,16 +298,29 @@ a {
 }
 
 #social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 #social-media > a > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 24px;
+    -webkit-transition: padding-top 0.3s ease-in-out;
+    -o-transition: padding-top 0.3s ease-in-out;
     transition: padding-top 0.3s ease-in-out;
     text-decoration: none;
     color: hsl(201, 100%, 96%);
@@ -274,8 +344,14 @@ a {
 
 /* ---------- START Footer Section -----------*/
 #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100vw;
     height: 10vh;
