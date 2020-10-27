@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root {
     --primary-font-color: hsl(210, 24%, 16%);
 }
@@ -24,11 +31,11 @@ a {
 
 /* ---------- START Media Query -----------*/
 /* Large screen */
-@media (max-width: 1024px) and (min-width: 768px) { 
+@media (max-width: 1024px) and (min-width: 768px) {
     .project-tile {
         width: 200px;
     }
-    
+
     .project-tile > a > img {
         width: 200px;
     }
@@ -39,7 +46,7 @@ a {
     .project-tile {
         width: 150px;
     }
-    
+
     .project-tile > a > img {
         width: 150px;
     }
@@ -54,7 +61,9 @@ a {
     max-width: 100%;
     top: 0;
     background-color: hsl(210, 24%, 16%);
+    position: -webkit-sticky;
     position: sticky;
+    -webkit-box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
     box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
@@ -63,8 +72,13 @@ a {
 }
 
 #navbar > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -78,6 +92,8 @@ a {
     border-radius: 2px;
     text-transform: capitalize;
     font-size: calc(1rem + 0.3vw);
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -92,6 +108,8 @@ a {
 
 #nav-links > li > a {
     color: hsl(125, 65%, 93%);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -106,18 +124,25 @@ a {
     position: relative;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: center / cover no-repeat url("https://cdn.pixabay.com/photo/2015/01/09/11/11/startup-594126_960_720.jpg");
-    margin-bottom: 36px;
+    background: hsl(200, 82%, 24%) center / cover no-repeat url('../img/background.jpg');
+    background-blend-mode: multiply;
+    /*margin-bottom: 36px;*/
 }
 
 #hero-text {
     z-index: 1;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
 }
@@ -127,26 +152,33 @@ a {
     font-size: calc(2rem + 0.9vw);
     color: hsl(216, 33%, 97%);
     font-weight: 500;
+    margin-bottom: 25%;
 }
 
-#overlay {
-  background: hsl(200, 82%, 24%);
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/*#overlay {*/
+/*  background: hsl(200, 82%, 24%);*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  opacity: 0.7;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*}*/
 /* ---------- END Welcome Section ----------- */
 
 
 
 /* ---------- START Project Section ---------- */
 #projects-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100vw;
     max-width: 100%;
@@ -154,8 +186,14 @@ a {
 }
 
 #projects-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -171,17 +209,29 @@ a {
     padding: 10px;
     margin: 20px 20px;
     border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
     box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
+    -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: -webkit-box-shadow 0.5s ease-in-out;
+    -o-transition: box-shadow 0.5s ease-in-out;
     transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
 .project-tile:hover {
+    -webkit-box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
     box-shadow: 0 0 10px 10px hsl(210, 16%, 82%);
 }
 
 .project-tile > a > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-size: calc(1.2rem + 0.2vw);
     font-weight: 400;
@@ -210,12 +260,22 @@ a {
     max-width: 100%;
     background-color: hsl(209, 18%, 30%);
     color: hsl(216, 33%, 97%);
+    border-top: 0.2rem solid hsl(200, 59%, 43%);
 }
 
 #contact-section > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 150px;
     padding-bottom: 10px;
@@ -238,16 +298,29 @@ a {
 }
 
 #social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 #social-media > a > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 24px;
+    -webkit-transition: padding-top 0.3s ease-in-out;
+    -o-transition: padding-top 0.3s ease-in-out;
     transition: padding-top 0.3s ease-in-out;
     text-decoration: none;
     color: hsl(201, 100%, 96%);
@@ -271,8 +344,14 @@ a {
 
 /* ---------- START Footer Section -----------*/
 #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100vw;
     height: 10vh;
